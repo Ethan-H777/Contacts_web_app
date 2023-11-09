@@ -1,38 +1,44 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  background-color: #EEE;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: calc(4px + 2vmin);
 }
 
-.App-link {
-  color: #61dafb;
+body {
+  font-family: 'Roboto', sans-serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Contacts h1 {
+  text-align: center;
+  color: #008080;
+}
+
+.Contacts table {
+  width: 100%;
+  border-collapse: separate;
+  background-color: #fff; 
+}
+
+.Contacts th, td {
+  padding: 10px; /* Adjust the padding value to control the space between columns */
+  text-align: left;
+  border: 1px solid #EEE; /* Light Grey for table borders */
+  border-left: none; /* Remove left border for table cells */
+  border-right: none; /* Remove right border for table cells */
+  border-width: 2px;
+  color: #333333; 
+}
+
+.Contacts td:first-child + td {
+  font-weight: bold; /* Make the first (Name) header column bold */
+}
+
+.Contacts td:last-child {
+  color: #0000FF;
+}
+
+.Contacts th {
+  color: #008080;
 }
